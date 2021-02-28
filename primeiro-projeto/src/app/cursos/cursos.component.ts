@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AlunosService } from './alunos.service';
+
 // O template inline só deve ser utilizado até 3 linhas
 // Para utilizá-lo dentro dos metadados use template: `dados do template` , utilizando template literals
 @Component({
@@ -14,14 +16,11 @@ export class CursosComponent implements OnInit {
     'curso_um': 'Java',
     'curso_dois': 'Angular'
   }
-  alunos: string[] = [
-    'Pedro Lima',
-    'Mayara Lima',
-    'Nicolas Lima'
-  ]
+  alunos: string[];
 
-  constructor() {
+  constructor(private alunosService: AlunosService) {
     this.nomePortal = 'http://loaine.training'
+    this.alunos = this.alunosService.getAlunos();
   }
 
   ngOnInit(): void {
