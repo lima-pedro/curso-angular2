@@ -1,4 +1,12 @@
 <p>
-    cursos component!
+   Lista de cursos do portal {{ nomePortal }}
 </p>
 <app-curso-detalhe></app-curso-detalhe>
+<ul>
+    <li>{{cursos.curso_um}}</li>
+    <li>{{cursos.curso_dois}}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let aluno of alunos">{{ aluno }}</li>
+</ul>
