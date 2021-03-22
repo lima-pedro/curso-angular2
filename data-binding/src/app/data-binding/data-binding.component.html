@@ -1,0 +1,16 @@
+<section class="property-binding">
+    <article>
+        <h3>Interpolation / Interpolação</h3>
+        <p>String renderizada com interpolação: {{ url }}</p>
+        <p>A soma de um mais um é: {{ 1 + 1 }}</p>
+        <p>A soma de um mais um não é {{ 1 + 1 + getValor() }}</p>
+        <p>Este curso de Angular é muito bom ? {{ getCurtirCurso && curtirCurso }} </p>
+    </article>
+
+    <article class="group-image" >
+        <h3>Property binding</h3>
+        <img class="logo" [src]="img" alt="Ícone angular" title="Ícone Angular"/>
+        <img class="logo" src={{img}} alt="Ícone angular" title="Ícone Angular"/>
+        <img class="logo" bind-src="img" alt="Ícone angular" title="Ícone Angular"/>
+    </article>
+</section>

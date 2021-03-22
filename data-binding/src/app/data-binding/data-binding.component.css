@@ -1,0 +1,15 @@
+.property-binding {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.property-binding .logo {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.property-binding .group-image {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
